@@ -57,4 +57,7 @@
     <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
     <string name="toast_Translucent_animation">Translucent animation</string>
 
+    <!-- SuperSU -->
+    <string name="supersu_title">SuperSU</string>
+
 </resources>
