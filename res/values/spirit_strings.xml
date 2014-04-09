@@ -1459,4 +1459,8 @@
     <string name="nfc_polling_mode_screen_locked">Screen on, locked</string>
     <string name="nfc_polling_mode_screen_unlocked">Screen on, unlocked (default)</string>
 
+    <!-- Chamber of Secrets -->
+    <string name="chamber_title">Chamber of secrets</string>
+    <string name="chamber_toast">The chamber of secrets has opened</string>
+
 </resources>
