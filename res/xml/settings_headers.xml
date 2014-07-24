@@ -286,8 +286,8 @@
     <header
         android:id="@+id/superuser"
         android:icon="@drawable/ic_action_permission"
-        android:title="@string/superuser" >
-		<intent
+        android:title="@string/superuser">
+        <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="eu.chainfire.supersu"
             android:targetClass="eu.chainfire.supersu.MainActivity" />
