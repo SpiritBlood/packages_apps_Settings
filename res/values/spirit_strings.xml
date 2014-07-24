@@ -1275,4 +1275,7 @@
 
     <string name="spirit_settings_title">Spirit Controls</string>
 
+    <!-- allow multiuser -->
+    <string name="multiuser_preference_title">Multiuser Support</string>
+
 </resources>
