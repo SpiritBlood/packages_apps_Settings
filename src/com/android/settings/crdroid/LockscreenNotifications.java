@@ -47,7 +47,7 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
     private static final String KEY_NOTIFICATIONS_HEIGHT = "notifications_height";
     private static final String KEY_PRIVACY_MODE = "privacy_mode";
     private static final String KEY_OFFSET_TOP = "offset_top";
-    private static final String KEY_CATEGORY_GENERAL = "category_general";
+    private static final String KEY_CATEGORY_GENERAL = "general_category";
     private static final String KEY_EXCLUDED_APPS = "excluded_apps";
     private static final String KEY_NOTIFICATION_COLOR = "notification_color";
 
