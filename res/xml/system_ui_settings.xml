@@ -76,7 +76,6 @@
         <PreferenceScreen
             android:id="@+id/weather"
             android:title="@string/weather_settings_title"
-            android:icon="@drawable/ic_aicp_weather"
             android:fragment="com.android.settings.aicp.Weather" />
 
     <!-- Device Specific Touchscreen gestures. Avoid duplicating CMHW functionality, please -->

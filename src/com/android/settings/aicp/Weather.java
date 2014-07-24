@@ -72,7 +72,7 @@ public class Weather extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         ContentResolver resolver = getActivity().getContentResolver();
 
-        addPreferencesFromResource(R.xml.system_ui_settings);
+        addPreferencesFromResource(R.xml.aicp_weather);
 
         PreferenceScreen prefSet = getPreferenceScreen();
 
