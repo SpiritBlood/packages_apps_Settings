@@ -282,11 +282,11 @@
         android:icon="@drawable/ic_settings_development"
         android:title="@string/development_settings_title" />
 
-    <!-- Superuser -->
+    <!-- SuperSU -->
     <header
-        android:id="@+id/superuser"
-        android:icon="@drawable/ic_action_permission"
-        android:title="@string/superuser">
+        android:id="@+id/supersu_settings"
+        android:icon="@drawable/ic_supersu_settings"
+        android:title="@string/supersu_title">
         <intent
             android:action="android.intent.action.MAIN"
             android:targetPackage="eu.chainfire.supersu"
