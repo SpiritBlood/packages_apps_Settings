@@ -1335,4 +1335,10 @@
     <!-- SuperSU -->
     <string name="supersu_title">SuperSU</string>
 
+    <!-- Sizes for pattern lockscreen -->
+    <string name="lock_pattern_size_7">7x7</string>
+    <string name="lock_pattern_size_8">8x8</string>
+    <string name="lock_pattern_size_9">9x9</string>
+    <string name="lock_pattern_size_10">10x10</string>
+
 </resources>
