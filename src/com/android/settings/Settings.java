@@ -806,6 +806,16 @@ public class Settings extends PreferenceActivity
                 if (!supported) {
                     target.remove(i);
                 }
+            } else if (id == R.id.viper_audio) {
+                // Embedding into Settings only if app exists (user could manually remove it)
+                boolean supported = false;
+                try {
+                    supported = (getPackageManager().getPackageInfo("com.vipercn.viper4android_v2", 0).versionCode >= 18);
+                } catch (PackageManager.NameNotFoundException e) {
+                }
+                if (!supported) {
+                    target.remove(i);
+                }
             } else if (id == R.id.supersu_settings) {
                 // Embedding into Settings is supported from SuperSU v1.85 and up
                 boolean supported = false;
