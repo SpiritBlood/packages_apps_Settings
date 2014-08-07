@@ -1353,7 +1353,6 @@ public class Settings extends PreferenceActivity
         if (mSearchItem != null) {
             mSearchItem.collapseActionView();
         }
-
         if (newConfig.uiThemeMode != mCurrentState && HeaderAdapter.mThemeEnabler != null) {
             mCurrentState = newConfig.uiThemeMode;
             HeaderAdapter.mThemeEnabler.setSwitchState();
