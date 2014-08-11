@@ -58,16 +58,6 @@
             android:fragment="com.android.settings.cyanogenmod.QuietHours"
             android:title="@string/quiet_hours_title" />
 
-    <!-- Viper4Android -->
-    <PreferenceScreen
-        android:id="@+id/viper_audio"
-        android:title="@string/viper_settings_title" >
-        <intent
-            android:action="android.intent.action.MAIN"
-            android:targetClass="com.vipercn.viper4android_v2.activity.ViPER4Android"
-            android:targetPackage="com.vipercn.viper4android_v2" />
-    </PreferenceScreen>
-
     <!-- DSP Manager -->
     <Preference
             android:key="musicfx"
