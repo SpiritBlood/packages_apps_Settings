@@ -1612,4 +1612,9 @@
     <string name="volume_panel_bg_color_title">Volume panel BG color</string>
     <string name="trds_default_color">TRDS default</string>
 
+    <!-- Wifi AP: connected devices -->
+    <string name="wifi_ap_clients_title">Connected devices</string>
+    <string name="wifi_ap_client_ap_disabled">Hotspot is disabled</string>
+    <string name="wifi_ap_client_none_connected">No devices connected</string>
+
 </resources>
