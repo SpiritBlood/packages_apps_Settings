@@ -209,7 +209,7 @@ public class InputMethodAndLanguageSettings extends SettingsPreferenceFragment
 
         // High touch sensitivity
         mHighTouchSensitivity = (CheckBoxPreference) findPreference(KEY_HIGH_TOUCH_SENSITIVITY);
-        if (!isHighTouchSensitivitySupported()) {
+        if (!isHighTouchSensitivitySupported() && mHighTouchSensitivity != null) {
             getPreferenceScreen().removePreference(mHighTouchSensitivity);
             mHighTouchSensitivity = null;
         }
