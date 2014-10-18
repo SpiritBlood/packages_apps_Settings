@@ -94,7 +94,7 @@
     <!-- Spirit controls -->
     <header
         android:id="@+id/spirit_settings"
-        android:icon="@drawable/ic_spirit_settings"
+        android:icon="@drawable/ic_settings_system"
         android:fragment="com.android.settings.spirit.SpiritControls"
         android:title="@string/spirit_settings_title" />
 
