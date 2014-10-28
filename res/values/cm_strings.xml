@@ -536,8 +536,8 @@ two in order to insert additional control points. \'Remove\' deletes the selecte
     <string name="bootanim_settings_title">Boot animations</string>
     <string name="soundpack_settings_title">Sound packs</string>
 
-    <!-- Performance settings -->
-    <string name="performance_settings_title">Kernel Tweaker</string>
+    <!-- Kernel Control Settings -->
+    <string name="performance_settings_title">Kernel Control</string>
 
     <!-- Performance Settings : Warning dialog -->
     <string name="performance_settings_warning_title">Proceed with caution</string>

@@ -1171,8 +1171,8 @@
     <string name="clock_font_light_italic">Light italic</string>
     <string name="clock_font_normal">Normal</string>
 
-    <!-- Kernel Control -->
-    <string name="kernel_tweaker_title">Kernel Control</string>
+    <!-- Kernel Tweaker -->
+    <string name="kernel_tweaker_title">Kernel Tweaker</string>
 
     <!-- Navbar Toggle QS -->
     <string name="title_navbar_tile">Navbar toggle</string>
