@@ -156,14 +156,14 @@ public class BatteryIconStyle extends SettingsPreferenceFragment
         if (intColor == -2 && (statusBarBattery == 2 || statusBarBattery == 0)) {
             intColor = systemUiResources.getColor(systemUiResources.getIdentifier(
                     "com.android.systemui:color/batterymeter_bolt_color", null, null));
--        } else if (intColor == -2) {
--            intColor = systemUiResources.getColor(systemUiResources.getIdentifier(
--                    "com.android.systemui:color/batterymeter_charge_color", null, null));
--        } else {
--            hexColor = String.format("#%08x", (0xffffffff & intColor));
--            mBatteryTextChargingColor.setSummary(hexColor);
--        }
--        mBatteryTextChargingColor.setNewPreviewColor(intColor);
+        } else if (intColor == -2) {
+            intColor = systemUiResources.getColor(systemUiResources.getIdentifier(
+                    "com.android.systemui:color/batterymeter_charge_color", null, null));
+        } else {
+            hexColor = String.format("#%08x", (0xffffffff & intColor));
+            mBatteryTextChargingColor.setSummary(hexColor);
+        }
+        mBatteryTextChargingColor.setNewPreviewColor(intColor);
 
         mCircleAnimSpeed =
             (ListPreference) findPreference(PREF_STATUS_BAR_CIRCLE_BATTERY_ANIMATIONSPEED);
