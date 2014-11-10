@@ -57,6 +57,8 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.android.settings.R;
+
 public class DeviceInfoSettings extends SettingsPreferenceFragment implements Indexable {
 
     private static final String LOG_TAG = "DeviceInfoSettings";
@@ -83,6 +85,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_SPIRIT_VERSION = "spirit_version";
+    private static final String KEY_SPIRIT_SHARE = "share";
 
     long[] mHits = new long[3];
 
@@ -191,6 +194,13 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
             }
         } else if (preference.getKey().equals(KEY_DEVICE_FEEDBACK)) {
             sendFeedback();
+        } else if (preference.getKey().equals(KEY_SPIRIT_SHARE)) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, String.format(
+                getActivity().getString(R.string.share_message), Build.MODEL));
+        startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }

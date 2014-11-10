@@ -64,4 +64,10 @@
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
 
+    <!-- Share SpiritROM -->
+    <string name="share_spirit_title">Share Spirit Rom</string>
+    <string name="share_spirit_summary">Let others know about Spirit Rom</string>
+    <string name="share_message">Check out what #Spirit Rom is all about @ http://goo.gl/XWPDCK</string>
+    <string name="share_chooser_title">Share Spirit Rom</string>
+
 </resources>
