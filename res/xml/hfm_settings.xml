@@ -14,14 +14,20 @@
      limitations under the License.
 -->
 
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/spirit_settings_title" >
+    android:title="@string/hfm_disable_ads_title" >
 
-    <PreferenceScreen
-        android:key="hfm_settings"
-        android:title="@string/hfm_pref_screen_title"
-        android:fragment="com.android.settings.spirit.hfm.HfmSettings" />
+        <CheckBoxPreference
+            android:key="hfm_disable_ads"
+            android:title="@string/hfm_disable_ads_title"
+            android:summary="@string/hfm_disable_ads_summary"
+            android:persistent="false" />
+
+        <Preference
+            android:key="hfm_update_hosts"
+            android:title="@string/hfm_update_hosts"
+            android:summary="@string/hfm_update_hosts_summary"
+            android:dependency="hfm_disable_ads" />
 
 </PreferenceScreen>
