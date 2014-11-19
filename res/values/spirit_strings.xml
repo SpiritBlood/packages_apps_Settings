@@ -137,4 +137,8 @@
     <string name="ime_switcher_notify">Selector notification</string>
     <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 
+    <!-- Volume adjust sound -->
+    <string name="volume_key_adjust_sound_title">Volume key adjustment sound</string>
+    <string name="volume_key_adjust_sound_summary">Play sound when adjusting volume with volume keys</string>
+
 </resources>
