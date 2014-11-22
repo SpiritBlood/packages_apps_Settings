@@ -23,11 +23,6 @@
             android:key="category_spirit_options"
             android:title="@string/display_category_spirit_options_title" >
 
-            <PreferenceScreen
-                android:key="navigation_bar_dimen"
-                android:fragment="com.android.settings.spirit.NavBarDimen"
-                android:title="@string/navbar_dimen_title" />
-
             <CheckBoxPreference
                 android:key="disable_immersive_message"
                 android:title="@string/disable_immersive_message_title"
@@ -39,6 +34,15 @@
                 android:title="@string/toast_animation_title"
                 android:entries="@array/toast_animation_entries"
                 android:entryValues="@array/toast_animation_values"
+                android:persistent="false" />
+
+            <ListPreference
+                android:key="navigation_bar_height"
+                android:dialogTitle="@string/navigation_bar_height"
+                android:title="@string/navigation_bar_height"
+                android:entries="@array/navigation_bar_height_entries"
+                android:entryValues="@array/navigation_bar_height_values"
+                android:defaultValue="48"
                 android:persistent="false" />
 
         </PreferenceCategory>
@@ -113,15 +117,6 @@
             <PreferenceScreen
                 android:key="advanced_display_prefs"
                 android:title="@string/advanced_settings">
-
-            <ListPreference
-                android:key="navigation_bar_height"
-                android:dialogTitle="@string/navigation_bar_height"
-                android:title="@string/navigation_bar_height"
-                android:entries="@array/navigation_bar_height_entries"
-                android:entryValues="@array/navigation_bar_height_values"
-                android:defaultValue="48"
-                android:persistent="false" />
 
                 <SwitchPreference
                     android:key="double_tap_wake_gesture"
