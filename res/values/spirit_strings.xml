@@ -15,9 +15,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-     <!-- Spirit Settings Strings -->
+    <!-- Spirit Settings Strings -->
     <string name="display_category_spirit_options_title">Spirit Options</string>
-	<string name="category_general_title">General Options</string>
+    <string name="category_general_title">General Options</string>
+    <string name="attention">Attention</string>
 
     <!-- About phone screen, spirit version -->
     <string name="spirit_version_title">Spirit version</string>
