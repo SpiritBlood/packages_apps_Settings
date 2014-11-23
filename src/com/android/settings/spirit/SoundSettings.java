@@ -76,7 +76,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mVolumeKeyAdjustSound.setOnPreferenceChangeListener(this);
         mVolumeKeyAdjustSound.setChecked(Settings.System.getInt(getContentResolver(),
                 VOLUME_KEY_ADJUST_SOUND, 1) != 0);
-
     }
 
     @Override
