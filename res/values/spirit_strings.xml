@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2014 The Spirit-Rom Project
+<!-- Copyright (C) 2014 The SpiritRom Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -65,11 +65,11 @@
     <string name="screenshot_sound_title">Screenshot sound</string>
     <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
 
-    <!-- Share SpiritROM -->
-    <string name="share_spirit_title">Share Spirit Rom</string>
-    <string name="share_spirit_summary">Let others know about Spirit Rom</string>
-    <string name="share_message">Check out what #Spirit Rom is all about @ http://goo.gl/XWPDCK</string>
-    <string name="share_chooser_title">Share Spirit Rom</string>
+    <!-- Share SpiritRom -->
+    <string name="share_spirit_title">Share SpiritRom</string>
+    <string name="share_spirit_summary">Let others know about SpiritRom</string>
+    <string name="share_message">Check out what #SpiritRom is all about @ http://goo.gl/XWPDCK</string>
+    <string name="share_chooser_title">Share SpiritRom</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation</string>
@@ -81,8 +81,8 @@
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
 
-    <!-- Spirit-Rom Sound settings -->
-    <string name="advanced_sound_title">Spirit-Rom sound</string>
+    <!-- SpiritRom Sound settings -->
+    <string name="advanced_sound_title">SpiritRom sound</string>
 
     <!-- Safe headset volume restore checkbox -->
     <string name="safe_headset_volume_title">Safe headset volume</string>

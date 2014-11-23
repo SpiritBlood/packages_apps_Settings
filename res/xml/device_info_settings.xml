@@ -17,9 +17,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+        <!-- SpiritRom Banner -->
         <PreferenceScreen android:key="spirit_banner"
-                android:layout="@layout/spirit_banner"
-                android:selectable="false" />
+                          android:enabled="false"
+                          android:layout="@layout/spirit_banner"
+                          android:selectable="false" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"

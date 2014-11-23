@@ -24,7 +24,7 @@
         android:key="sound"
         android:title="@string/sound_settings" >
 
-        <!-- Spirit-Rom options -->
+        <!-- SpiritRom options -->
         <PreferenceScreen
                 android:key="advanced_sound_settings"
                 android:title="@string/advanced_sound_title"
