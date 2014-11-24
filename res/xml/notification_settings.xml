@@ -50,7 +50,7 @@
                 android:title="@string/ring_volume_option_title" />
 
         <!-- Increasing ring -->
-        <com.android.settings.cyanogenmod.SystemSettingSwitchPreference
+        <com.android.settings.spirit.SystemSettingSwitchPreference
                 android:key="increasing_ring"
                 android:title="@string/increasing_ring_volume_option_title" />
 
@@ -96,7 +96,7 @@
                 android:ringtoneType="notification" />
 
         <!-- Screenshot tone -->
-        <com.android.settings.spirit.preference.SystemCheckBoxPreference
+        <com.android.settings.spirit.SystemCheckBoxPreference
                 android:key="screenshot_sound"
                 android:title="@string/screenshot_sound_title"
                 android:summary="@string/screenshot_sound_summary"
