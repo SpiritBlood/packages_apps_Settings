@@ -24,13 +24,6 @@
         android:key="sound"
         android:title="@string/sound_settings" >
 
-        <!-- SpiritRom options -->
-        <PreferenceScreen
-                android:key="advanced_sound_settings"
-                android:title="@string/advanced_sound_title"
-                android:persistent="false"
-                android:fragment="com.android.settings.spirit.SoundSettings" />
-
         <!-- Media volume -->
         <com.android.settings.notification.VolumeSeekBarPreference
                 android:key="media_volume"
@@ -108,6 +101,13 @@
                 android:title="@string/other_sound_settings"
                 android:persistent="false"
                 android:fragment="com.android.settings.notification.OtherSoundSettings" />
+
+        <!-- SpiritRom options -->
+        <PreferenceScreen
+                android:key="advanced_sound_settings"
+                android:title="@string/advanced_sound_title"
+                android:persistent="false"
+                android:fragment="com.android.settings.spirit.SoundSettings" />
 
     </PreferenceCategory>
 

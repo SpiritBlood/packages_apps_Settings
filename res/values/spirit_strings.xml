@@ -19,6 +19,7 @@
     <string name="display_category_spirit_options_title">Spirit Options</string>
     <string name="category_general_title">General Options</string>
     <string name="attention">Attention</string>
+    <string name="header_category_personalization">SpiritRom Menu</string>
 
     <!-- About phone screen, spirit version -->
     <string name="spirit_version_title">Spirit version</string>
@@ -143,5 +144,18 @@
 
     <!-- Restart SystemUI -->
     <string name="restart_systemui">Restart SystemUI</string>
+
+    <!-- Profiles -->
+    <string name="profile_reset_title">Reset</string>
+    <string name="profiles_add">Add</string>
+    <string name="profile_choose_app">Choose app</string>
+
+    <!-- Status bar -->
+    <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
+    <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
 
 </resources>

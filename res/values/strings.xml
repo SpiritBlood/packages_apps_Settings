@@ -6097,9 +6097,4 @@
     <string name="menu_hidden_apps_reset_lock">Reset pattern lock</string>
     <string name="protected_apps">Protected apps</string>
     <string name="saving_protected_components">Saving component state</string>
-
-    <!-- Profiles -->
-    <string name="profile_reset_title">Reset</string>
-    <string name="profiles_add">Add</string>
-    <string name="profile_choose_app">Choose app</string>
 </resources>
