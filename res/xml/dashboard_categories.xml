@@ -76,7 +76,6 @@
                 android:fragment="com.android.settings.WirelessSettings"
                 android:icon="@drawable/ic_settings_more"
                 />
-
     </dashboard-category>
 
     <!-- Spirit Menu -->
@@ -100,7 +99,6 @@
                 android:icon="@drawable/ic_status_bar_settings"
                 />
 
-
     </dashboard-category>
 
     <!-- DEVICE -->
@@ -115,8 +113,6 @@
                 android:fragment="com.android.settings.ButtonSettings"
                 android:icon="@drawable/ic_settings_buttons_teal"
                 />
-
-
 
         <!-- Display -->
         <dashboard-tile
