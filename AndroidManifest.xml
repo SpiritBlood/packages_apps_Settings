@@ -2120,6 +2120,21 @@
                 android:resource="@id/sim_settings" />
         </activity>
 
+        <!-- Spirit Main Settings -->
+        <activity android:name="Settings$MainSettingsActivity"
+            android:label="@string/spirit_settings_title"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.spirit.MainSettings" />
+        </activity>
+
+        <activity
+             android:name=".spirit.MainSettings" />
+
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"
             android:authorities="com.android.settings"

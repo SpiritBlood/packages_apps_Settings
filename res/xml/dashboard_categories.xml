@@ -79,10 +79,18 @@
 
     </dashboard-category>
 
-    <!-- Personalization -->
+    <!-- Spirit Menu -->
     <dashboard-category
             android:id="@+id/device_personalization"
             android:title="@string/header_category_personalization" >
+
+        <!-- Spirit Controls -->
+        <dashboard-tile
+                android:id="@+id/main_settings"
+                android:title="@string/spirit_settings_title"
+                android:fragment="com.android.settings.spirit.MainSettings"
+                android:icon="@drawable/ic_spirit_settings_teal"
+                />
 
         <!-- Status bar -->
         <dashboard-tile

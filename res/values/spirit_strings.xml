@@ -20,6 +20,7 @@
     <string name="category_general_title">General Options</string>
     <string name="attention">Attention</string>
     <string name="header_category_personalization">SpiritRom Menu</string>
+    <string name="spirit_settings_title">Spirit Controls</string>
 
     <!-- About phone screen, spirit version -->
     <string name="spirit_version_title">Spirit version</string>
