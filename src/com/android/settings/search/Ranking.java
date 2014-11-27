@@ -107,7 +107,7 @@ public final class Ranking {
         sRankMap.put(WirelessSettings.class.getName(), RANK_WIRELESS);
 
         // Spirit
-        sRankMap.put(MainSettings.class.getName(), RANK_Spirit);
+        sRankMap.put(MainSettings.class.getName(), RANK_SPIRIT);
 
         // Home
         sRankMap.put(HomeSettings.class.getName(), RANK_HOME);
