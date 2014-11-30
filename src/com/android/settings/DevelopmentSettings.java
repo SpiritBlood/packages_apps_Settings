@@ -77,7 +77,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
-/*    private static final String ADB_TCPIP = "adb_over_network";
+/*
  * Displays preferences for application developers.
  */
 public class DevelopmentSettings extends SettingsPreferenceFragment
@@ -253,7 +253,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private PreferenceScreen mProcessStats;
     private ListPreference mRootAccess;
-    private Object mSelectedRootValue;    private Dialog mAdbTcpDialog;
+    private Object mSelectedRootValue;
 
     private SwitchPreference mAdvancedReboot;
 
@@ -267,7 +267,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private boolean mDialogClicked;
     private Dialog mEnableDialog;
     private Dialog mAdbDialog;
-
     private Dialog mAdbTcpDialog;
     private Dialog mAdbKeysDialog;
     private boolean mUnavailable;
@@ -631,7 +630,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 Settings.Secure.ADB_PORT, 0);
         boolean enabled = port > 0;
 
-        updateSwitchPref(mAdbOverNetwork, enabled);
+        updateswitchPref(mAdbOverNetwork, enabled);
 
         WifiInfo wifiInfo = null;
 
@@ -1439,7 +1438,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         if (isChecked != mLastEnabledState) {
             if (isChecked) {
                 mDialogClicked = false;
-                if (mEnableDialog != null) dismissDialogs();
+                if (mEnableDialog != null) {
+                    dismissDialogs();
+                }
                 mEnableDialog = new AlertDialog.Builder(getActivity()).setMessage(
                         getActivity().getResources().getString(
                                 R.string.dev_settings_warning_message))
@@ -1480,7 +1481,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         if (preference == mEnableAdb) {
             if (mEnableAdb.isChecked()) {
                 mDialogClicked = false;
-               if (mEnableDialog != null) {
+                if (mAdbDialog != null) {
                     dismissDialogs();
                 }
                 mAdbDialog = new AlertDialog.Builder(getActivity()).setMessage(
@@ -1708,6 +1709,11 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 updateVerifyAppsOverUsbOptions();
                 updateBugreportOptions();
             }
+        } else if (dialog == mAdbTcpDialog) {
+            if (which == DialogInterface.BUTTON_POSITIVE) {
+                Settings.Secure.putInt(getActivity().getContentResolver(),
+                        Settings.Secure.ADB_PORT, 5555);
+            }
         } else if (dialog == mAdbKeysDialog) {
             if (which == DialogInterface.BUTTON_POSITIVE) {
                 try {
@@ -1725,9 +1731,6 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                         Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 1);
                 mLastEnabledState = true;
                 setPrefsEnabledState(mLastEnabledState);
-            } else {
-                // Reset the toggle
-                mSwitchBar.setChecked(false);
             }
         } else if (dialog == mRootDialog) {
             if (which == DialogInterface.BUTTON_POSITIVE) {
@@ -1746,11 +1749,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 mEnableAdb.setChecked(false);
             }
             mAdbDialog = null;
-            }
         } else if (dialog == mAdbTcpDialog) {
-            if (which == DialogInterface.BUTTON_POSITIVE) {
-                Settings.Secure.putInt(getActivity().getContentResolver(),
-                        Settings.Secure.ADB_PORT, 5555);
+            updateAdbOverNetwork();
+            mAdbTcpDialog = null;
         } else if (dialog == mEnableDialog) {
             if (!mDialogClicked) {
                 mSwitchBar.setChecked(false);
