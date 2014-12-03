@@ -40,6 +40,8 @@ public class PrivacySettings extends SettingsPreferenceFragment {
 
         mBlacklist = (PreferenceScreen) findPreference(KEY_BLACKLIST);
 
+        mBlacklist = (PreferenceScreen) findPreference(KEY_BLACKLIST);
+
         // Add package manager to check if features are available
         PackageManager pm = getPackageManager();
 
