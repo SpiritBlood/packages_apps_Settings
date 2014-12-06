@@ -23,7 +23,7 @@
             android:key="category_spirit_options"
             android:title="@string/display_category_spirit_options_title" >
 
-            <CheckBoxPreference
+            <SwitchPreference
                 android:key="disable_immersive_message"
                 android:title="@string/disable_immersive_message_title"
                 android:summary="@string/disable_immersive_message_summary"
@@ -139,21 +139,22 @@
                 android:key="advanced_display_prefs"
                 android:title="@string/advanced_settings">
 
-                <SwitchPreference
+                <com.android.settings.spirit.SystemSettingSwitchPreference
                     android:key="double_tap_wake_gesture"
-                    android:title="@string/double_tap_to_wake_title" />
+                    android:title="@string/double_tap_to_wake_title"
+                    android:defaultValue="false" />
 
                 <com.android.settings.spirit.SystemSettingSwitchPreference
                     android:key="proximity_on_wake"
                     android:title="@string/proximity_wake_title"
                     android:summary="@string/proximity_wake_summary"
-                    android:defaultValue="true" />
+                    android:defaultValue="false" />
 
                 <com.android.settings.spirit.SystemSettingSwitchPreference
                     android:key="double_tap_sleep_gesture"
                     android:title="@string/double_tap_to_sleep_title"
                     android:summary="@string/double_tap_to_sleep_summary"
-                    android:defaultValue="true" />
+                    android:defaultValue="false" />
 
         </PreferenceCategory>
 
