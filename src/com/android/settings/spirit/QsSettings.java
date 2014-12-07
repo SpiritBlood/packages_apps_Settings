@@ -31,7 +31,7 @@ import android.provider.Settings;
 import android.text.TextUtils;
 import android.view.View;
 
-import com.android.settings.cyanogenmod.DeviceUtils;
+import com.android.internal.util.spirit.DeviceUtils;
 import com.android.internal.widget.LockPatternUtils;
 
 import com.android.settings.SettingsPreferenceFragment;
