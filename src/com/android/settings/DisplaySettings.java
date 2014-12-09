@@ -49,6 +49,7 @@ import android.os.RemoteException;
 import android.os.SystemProperties;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceManager;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceManager;
@@ -61,7 +62,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 import com.android.settings.spirit.DisplayRotation;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -89,6 +89,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_DOZE = "doze";
     private static final String KEY_AUTO_BRIGHTNESS = "auto_brightness";
     private static final String KEY_AUTO_ROTATE = "auto_rotate";
+    private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";
+    private static final String KEY_SUNLIGHT_ENHANCEMENT = "sunlight_enhancement";
+    private static final String KEY_COLOR_ENHANCEMENT = "color_enhancement";
     private static final String KEY_TAP_TO_WAKE = "double_tap_wake_gesture";
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String DISABLE_IMMERSIVE_MESSAGE = "disable_immersive_message";
@@ -97,9 +100,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_WAKEUP_CATEGORY = "category_wakeup_options";
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
 
-    private static final String KEY_ADAPTIVE_BACKLIGHT = "adaptive_backlight";
-    private static final String KEY_SUNLIGHT_ENHANCEMENT = "sunlight_enhancement";
-    private static final String KEY_COLOR_ENHANCEMENT = "color_enhancement";
     private static final String KEY_PROXIMITY_WAKE = "proximity_on_wake";
 
     private static final String CATEGORY_ADVANCED = "advanced_display_prefs";
